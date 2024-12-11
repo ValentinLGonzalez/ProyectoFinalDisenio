@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Digital - Búsqueda</title>
+    <link rel="stylesheet" href="Busqueda.css">
+    <!-- Enlace a iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="HomePage.html"><div class="logo">
+            <img src="/Imagenes/AreaDigitalLogo.jpg" alt="Logo Área Digital" class="logo-img">
+            <h3>Área Digital</h3>
+        </div></a>
+        <div class="icons">
+            <span class="icon-container icon-container-search-active"><i class="material-icons">search</i></span>
+            <span class="icon-container"><i class="material-icons">shopping_cart</i></span>
+            <span class="icon-container"><i class="material-icons">person</i></span>
+        </div>        
+    </header>
+
+    <!-- Panel de búsqueda -->
+    <div class="search-section">
+        <h2>¿Qué estás buscando?</h2>
+        <div class="search-container">
+            <input type="text" placeholder="Nombre del producto...">
+            <button><span class="icon-container"> <i class="material-icons">search</i></span></button>
+        </div>
+    </div>
+    <!-- Contenido de búsqueda -->
+    <main class="main-content">
+        <h1>Encontramos esto</h1>
+        <div class="product-grid">
+            <!-- Cada producto será un "card" -->
+        </div>
+    </main>
+    <script type="module" src="Busqueda.js"></script>
+</body>
+</html>
