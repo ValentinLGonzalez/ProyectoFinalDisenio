@@ -109,20 +109,11 @@
         transition: background-color 0.3s ease;
     }
 
-    /* Efecto hover en el ícono */
-    .add-to-cart .icon-container:hover {
-        background-color: #FEEFC3; /* Fondo más claro al pasar el mouse */
-    }
-
     /* Ícono de Material Icons */
     .add-to-cart .icon-container i {
         color: #E37400; /* Color del ícono */
         font-size: 1.5rem; /* Tamaño del ícono */
         transition: transform 0.2s ease;
-    }
-
-    .add-to-cart .icon-container:hover i {
-        transform: scale(1.2); /* Escala el ícono ligeramente */
     }
 
     /* Texto dentro del botón */

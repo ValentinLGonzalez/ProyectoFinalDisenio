@@ -1,4 +1,3 @@
-// Importar los datos de productos
 import { productos } from '../Productos.js';
 
 // Obtener el ID del producto desde la URL
@@ -45,6 +44,28 @@ if (productoSeleccionado) {
             </div>
         </div>
     `;
+
+    // Agregar el producto al carrito
+    const addToCartButton = document.querySelector('.add-to-cart');
+    addToCartButton.addEventListener('click', () => {
+        addToCart(productoSeleccionado);
+    });
+
 } else {
     productDetailContainer.innerHTML = '<p>Producto no encontrado</p>';
+}
+
+// Función para agregar al carrito y actualizar sessionStorage
+function addToCart(product) {
+    const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+    const existingProduct = cart.find(item => item.id === product.id);
+
+    if (existingProduct) {
+        existingProduct.cantidad += 1;
+    } else {
+        cart.push({ ...product, cantidad: 1 });
+    }
+
+    // Guardar el carrito en sessionStorage
+    sessionStorage.setItem('cart', JSON.stringify(cart));
 }
