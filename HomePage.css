@@ -141,28 +141,9 @@
         max-width: 80%;
     }
 
-    .product-card {
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-        transition: transform 0.2s;
-        display: flex;
-        flex-direction: column;       /* Asegura que los elementos dentro de la card estén en columna */
-        height: 100%;                 /* La altura de la card se ajustará a la altura fija */
-        justify-content: space-between;
-    }
-    
     .product-card:hover {
         transform: translateY(-5px);
         background-color: #FEEFC3;
-    }
-    
-    .product-card img {
-        width: 100%;
-        height: 200px; 
-        object-fit: contain; 
-        border-radius: 10px;
-        margin-bottom: 10px;
     }
     
     .product-card h3 {
@@ -207,6 +188,26 @@
         margin: 10px 0 5px 0;
     }
 
+    .Descuento-button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #Descuento-load-more {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    #Descuento-load-more:hover {
+        background-color: #e65c00;
+    }
+
 /* A P P L E S H O W C A S E*/
 
     .apple-products-container {
@@ -228,6 +229,61 @@
       max-width: 80%;
   }
     
+/* T O D O S - L O S - P R O D U C T O S */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Scroll horizontal para pantallas pequeñas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 10px;
+  }
+
+  .product-card {
+    display: flex;
+    flex: 0 0 auto; /* Evita que los elementos se redimensionen automáticamente */
+    width: auto; /* Ancho fijo para las tarjetas */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;       /* Asegura que los elementos dentro de la card estén en columna */
+    height: 100%;                 /* La altura de la card se ajustará a la altura fija */
+    justify-content: space-between;
+    transition: transform 0.2s;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+/* I M A G E N - M A I N */
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: auto;
+    max-width: 49.3%;
+    padding: 0 0px;
+    margin: 25px 0 5px 0; 
+  }
+
+  .column img {
+    margin: 0 0 20px 0; 
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+  }
 
 @keyframes fade {
   from {opacity: .4}
