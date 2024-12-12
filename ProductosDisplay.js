@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     productos.forEach(producto => {
         const cardHTML = `
-            <div class="product-card">
+            <div class="product-card" onclick="location.href='pdp.html?id=${producto.id}'">
                 <img src="${producto.imagen}" alt="${producto.nombre}">
                 <h3>${producto.nombre}</h3>
                 <p class="price">
