@@ -8,7 +8,8 @@ export const productos = [
         imagen: "/Imagenes/impresora.png",
         precio: "$869.999 ARS",
         precioDescuento: "$909.999 ARS",
-        descuento: "5% OFF"
+        descuento: "5% OFF",
+        descripcion: "Imprima a color desde cualquier lugar con velocidades ultrarrápidas y Wi-Fi® con recuperación automática. <br>Ayude a su equipo de trabajo empresarial con esta impresora compacta, de alto rendimiento y a color que es ideal para hasta 10 usuarios. <br>Haga más con las funciones de productividad inteligentes y los sencillos accesos directos, disponibles en cualquier momento y lugar. <br>La mejor aplicación de administración de flujo de trabajo de documentos para las pequeñas y medianas empresas de trabajo flexible de la actualidad.<br>Instale y configure desde un panel de control individual, desde la incorporación hasta el uso continuo. <br>Conecte su flota de impresoras. Las sólidas funciones y las herramientas inteligentes permiten al personal hacer más, no importa donde se realice el trabajo."
     },
     {
         id: 2,

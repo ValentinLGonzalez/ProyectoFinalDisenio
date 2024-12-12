@@ -1,0 +1,135 @@
+/* C O L U M N A S */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    overflow: auto;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* I N F O - P R O D U C T O */
+    .product-card {
+        display: flex; /* Usamos flexbox */
+        flex-direction: column; /* Elementos apilados verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        justify-content: center; /* Centrar verticalmente, si es necesario */
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+    .product-card img {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin: 0 auto 10px; /* Centra horizontalmente */
+        display: block; /* Necesario para que los márgenes automáticos funcionen */
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+        margin: 0 0;
+        text-transform: uppercase;
+        color: #202124;
+
+    }
+
+    .product-card .price {
+        display: flex; 
+        align-items: center; 
+        gap: 8px; 
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        display: block;
+        margin: 0 1px 0 auto;
+        margin: 0 0 0 600px 0; /* Espaciado alrededor */
+        color: #9AA9A6;
+    }
+
+    .discount {
+        background-color: #FBBC04;
+        display: block;
+        margin: 0 auto 0 1px;
+        color: #202124;
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .final-price {
+        color: #E37400;
+        margin: 5px 0 5px 0;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100%; 
+    }
+
+/* B O T Ó N - C A R R I T O - I C O N */
+    /* Botón de añadir al carrito */
+    .add-to-cart {
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        background-color: #FEEFC3; 
+        border: none;
+        border-radius: 8px; 
+        padding: 10px 15px; 
+        margin-top: 15px;
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+    }
+
+    /* Efecto hover para el botón */
+    .add-to-cart:hover {
+        background-color: #FBBC04; 
+    }
+
+    /* Estilo para el ícono dentro del botón */
+    .add-to-cart .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px; 
+        height: 40px; 
+        background-color: #FFFFFF; 
+        border-radius: 50%; 
+        transition: background-color 0.3s ease;
+    }
+
+    /* Efecto hover en el ícono */
+    .add-to-cart .icon-container:hover {
+        background-color: #FEEFC3; /* Fondo más claro al pasar el mouse */
+    }
+
+    /* Ícono de Material Icons */
+    .add-to-cart .icon-container i {
+        color: #E37400; /* Color del ícono */
+        font-size: 1.5rem; /* Tamaño del ícono */
+        transition: transform 0.2s ease;
+    }
+
+    .add-to-cart .icon-container:hover i {
+        transform: scale(1.2); /* Escala el ícono ligeramente */
+    }
+
+    /* Texto dentro del botón */
+    .add-to-cart h4 {
+        margin: 0; /* Quita márgenes */
+        font-size: 1rem; /* Tamaño del texto */
+        color: #E37400; /* Color del texto */
+        text-transform: uppercase; /* Texto en mayúsculas */
+    }
+
