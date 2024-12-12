@@ -1,5 +1,5 @@
 // Importar los datos de productos
-import { productos } from './Productos.js';
+import { productos } from '../Productos.js';
 
 // Obtener el ID del producto desde la URL
 const params = new URLSearchParams(window.location.search);
