@@ -4,8 +4,11 @@
         border-radius: 10px;
         padding: 20px;
         max-width: 600px;
-        margin: 25px auto 25px auto;
+        margin: 25px auto;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     form label {
@@ -31,6 +34,12 @@
         height: 100px;
     }
 
+    form .button-container {
+        display: flex;
+        justify-content: space-between; /* Asegura que los botones estén a los extremos */
+        gap: 10px; /* Espacio entre los botones */
+    }
+    
     form button {
         background-color: #E37400;
         color: white;
@@ -39,18 +48,31 @@
         border-radius: 10px;
         cursor: pointer;
         font-size: 1em;
-        display: block;
-        margin: 0 auto;
+        margin-top: 20px;
+        align-self: flex-end; /* Esto mueve el botón a la derecha */
+        font-family: LexendDeca_Light;
         transition: transform 0.3s ease;
     }
-
+    
     form button:hover {
         background-color: #FBBC04;
+    }
+
+    #clear-cart {
+        background-color: #FEEFC3;
+        color: #E37400;
+        font-weight: bold;
     }
 
     #cart-summary {
         background-color: #F1F3F4;
         padding: 15px;
         border-radius: 10px;
-        margin: 10px 0 10px 0;
+        margin: 10px 0;
+        font-family: LexendDeca_Light;
+        list-style-type: none;
+        width: 100%; /* Asegura que ocupe todo el espacio horizontal */
+        box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho */
     }
+
+    

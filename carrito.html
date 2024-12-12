@@ -36,11 +36,14 @@
 
             <h3>Resumen del Carrito</h3>
             <ul id="cart-summary"></ul>
-            <p>Total a pagar: <strong>$<span id="cart-total-summary">0.00</span></strong></p>
+            <p>Total a pagar: <strong><span id="cart-total-summary">0.00</span></strong></p>
 
             <div id="cart-form-container"></div>
 
-            <button type="submit">Enviar</button>
+            <div class="button-container">
+                <button type="button" id="clear-cart" class="clear-cart">Vaciar carrito</button>
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </main>
     <script src="checkout.js"></script>
@@ -72,6 +75,7 @@
         </div>
     </footer>
     <script src="checkout.js"></script>
+    <script src="carrito.js"></script>
 </body>
 
 </html>
